@@ -1,0 +1,129 @@
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  th {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+  
+  td {
+    padding: 15px;
+    border-top: 1px solid #eee;
+    font-size: 15px;
+  }
+  td.corre {
+    text-align: center;
+  }
+  
+  
+  tr:hover {
+    background-color: #f5faff;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  
+
+
+
+
+
+.navbar {
+    background-color: #FFC324;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-left {
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a8f00;
+  }
+  .navbar-right {
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000caf;
+  }
+  
+  .navbar-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  
+
+
+  .btn1, .btn2, .btn3 {
+    color: white;
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Botón Azul */
+  .btn1 {
+    background-color: #007bff;
+    border-color: #0056b3;
+  }
+  .btn1:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Botón Verde */
+  .btn2 {
+    background-color: #28a745;
+    border-color: #1e7e34;
+  }
+  .btn2:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Botón Amarillo */
+  .btn3 {
+    background-color: #ffc107;
+    border-color: #e0a800;
+    color: #212529;
+  }
+  .btn3:hover {
+    transform: scale(1.05);
+  }
