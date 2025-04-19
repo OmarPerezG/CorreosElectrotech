@@ -127,3 +127,12 @@ table {
   .btn3:hover {
     transform: scale(1.05);
   }
+
+.botones-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacio entre botones */
+  flex-wrap: wrap;
+}
