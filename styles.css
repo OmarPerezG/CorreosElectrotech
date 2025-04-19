@@ -90,47 +90,40 @@ table {
   
 
 
+  .btn1, .btn2, .btn3 {
+    color: white;
+    border: 2px solid;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Botón Azul */
   .btn1 {
     background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-color: #0056b3;
   }
-
   .btn1:hover {
-    background-color: #0056b3;
+    transform: scale(1.05);
   }
-
+  
+  /* Botón Verde */
   .btn2 {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #28a745;
+    border-color: #1e7e34;
   }
-
   .btn2:hover {
-    background-color: #0056b3;
+    transform: scale(1.05);
   }
-
+  
+  /* Botón Amarillo */
   .btn3 {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #ffc107;
+    border-color: #e0a800;
+    color: #212529;
   }
-
   .btn3:hover {
-    background-color: #0056b3;
+    transform: scale(1.05);
   }
