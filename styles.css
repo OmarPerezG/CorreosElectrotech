@@ -97,7 +97,8 @@ table {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-  }
+  
   .btn1 { background-color: #007BFF; color: white; }
   .btn2 { background-color: #28A745; color: white; }
   .btn3 { background-color: #FFC107; color: black; }
+}
