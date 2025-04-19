@@ -106,7 +106,7 @@ table {
   }
 
   .btn2 {
-    background-color: #28a745;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -117,11 +117,11 @@ table {
   }
 
   .btn2:hover {
-    transform: scale(1.05);
+    background-color: #0056b3;
   }
 
   .btn3 {
-    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -132,5 +132,5 @@ table {
   }
 
   .btn3:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #0056b3;
   }
