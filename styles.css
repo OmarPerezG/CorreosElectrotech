@@ -90,15 +90,48 @@ table {
   
 
 
-.buttons {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
+  .btn1 {
+    background-color: #007bff;
+    color: white;
     border: none;
+    padding: 12px 24px;
     border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
-  
-  .btn1 { background-color: #007BFF; color: white; }
-  .btn2 { background-color: #28A745; color: white; }
-  .btn3 { background-color: #FFC107; color: black; }
-}
+    transition: background-color 0.3s ease;
+  }
+
+  .btn1:hover {
+    background-color: #0056b3;
+  }
+
+  .btn2 {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #1e7e34;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .btn2:hover {
+    transform: scale(1.05);
+  }
+
+  .btn3 {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .btn3:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
