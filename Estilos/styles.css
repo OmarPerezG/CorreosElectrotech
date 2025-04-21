@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Estilo de tabla */
 table {
   width: 80%;
   margin: 50px auto;
@@ -7,7 +20,6 @@ table {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 th {
@@ -21,40 +33,91 @@ th {
 
 td {
   padding: 15px;
-  border-top: 1px solid #eee;
-  font-size: 15px;
+  border-top: 1px solid #000000;
+  font-size: 25px;
 }
+
 td.corre {
   text-align: center;
 }
-
 
 tr:hover {
   background-color: #f5faff;
 }
 
-button {
-  padding: 8px 16px;
-  background-color: #0073e6;
-  color: white;
-  border: none;
-  border-radius: 6px;
+/* Estilo de botones generales */
+button,
+.btn1, .btn2, .btn3 {
+  padding: 20px 34px;
+  border-radius: 8px;
+  font-size: 40px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  color: white;
+  border: 2px solid;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #005bb5;
+/* Botón Azul */
+.btn1 {
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+.btn1:hover {
+  background-color: #0056b3;
   transform: scale(1.05);
+}
+
+/* Botón Verde */
+.btn2 {
+  background-color: #28a745;
+  border-color: #1e7e34;
+}
+.btn2:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+/* Botón Amarillo */
+.btn3 {
+  background-color: #ffc107;
+  border-color: #e0a800;
+  color: #212529;
+}
+.btn3:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Contenedor de botones centrado vertical y horizontalmente */
+.botones-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilo del botón "Regresar" */
+.btn-regresar {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
   cursor: pointer;
 }
 
+.btn-regresar:hover {
+  background-color: #0056b3;
+}
 
 
-
-
-
-
+/* Navbar superior */
 .navbar {
   background-color: #FFC324;
   display: flex;
@@ -72,6 +135,7 @@ button:hover {
   font-weight: bold;
   color: #1a8f00;
 }
+
 .navbar-right {
   position: absolute;
   right: 20px;
@@ -87,53 +151,84 @@ button:hover {
   margin: 0;
 }
 
-
-
-
-.btn1, .btn2, .btn3 {
+.btn-acceder {
+  padding: 10px 20px;
+  background-color: #0073e6;
   color: white;
-  border: 2px solid;
-  padding: 20px 34px;
-  border-radius: 8px;
-  font-size: 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-acceder:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
   cursor: pointer;
-  transition: transform 0.2s ease;
 }
 
-/* Botón Azul */
-.btn1 {
-  background-color: #007bff;
-  border-color: #0056b3;
-}
-.btn1:hover {
-  transform: scale(1.05);
-}
-
-/* Botón Verde */
-.btn2 {
-  background-color: #28a745;
-  border-color: #1e7e34;
-}
-.btn2:hover {
-  transform: scale(1.05);
-}
-
-/* Botón Amarillo */
-.btn3 {
-  background-color: #ffc107;
-  border-color: #e0a800;
-  color: #212529;
-}
-.btn3:hover {
-  transform: scale(1.05);
-}
-
-
-.botones-container {
-  height: 100vh; /* Ocupar toda la altura de la pantalla */
+/* Contenedor con el título del proyecto */
+.proyecto-title {
   display: flex;
-  justify-content: center; /* Centrado horizontal */
-  align-items: center;     /* Centrado vertical */
-  gap: 20px;               /* Espacio entre los botones */
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 20px;
+}
+
+/* Estilo para el contenedor de la card del proyecto */
+.proyecto-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-card img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.proyecto-card .description {
+  max-width: 500px;
+  font-size: 16px;
+  color: #333;
+}
+
+.proyecto-card .description h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.proyecto-card .description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilo para las imágenes del proyecto */
+.proyecto-card .image-gallery {
+  display: flex;
   flex-wrap: wrap;
+  gap: 15px;
+}
+
+.proyecto-card .image-gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.proyecto-card .image-gallery img:hover {
+  transform: scale(1.1);
 }
