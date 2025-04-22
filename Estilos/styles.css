@@ -7,8 +7,14 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f2f2;
+  background-image: url('https://cdn.pixabay.com/photo/2018/01/29/13/03/internet-3116062_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Esto da un efecto paralaje suave */
+  color: rgb(0, 0, 0); /* Opcional: mejora visibilidad del texto */
 }
+
 
 /* Estilo de tabla */
 table {
@@ -102,8 +108,8 @@ button,
 /* Estilo del botón "Regresar" */
 .btn-regresar {
   position: absolute;
-  top: 90px;
-  left: 20px;
+  top: 80px;
+  left: 120px;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #ff0000;
@@ -113,6 +119,80 @@ button,
 }
 
 .btn-regresar:hover {
+  background-color: #0056b3;
+}
+.btn-regresar2 {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-regresar2:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo del botón "excel" */
+.btn-excel {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #14a107;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; /* Quita el subrayado del enlace */
+  display: inline-block; /* Hace que se comporte como botón */
+  border-radius: 6px; /* Opcional: mejora estética */
+  text-align: center;
+}
+
+.btn-excel:hover {
+  background-color: #0056b3;
+}
+/* Estilo del botón "excel2" */
+.btn-excel2 {
+  position: absolute;
+  top: 80px;
+  left: 250px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #14a107;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; /* Quita el subrayado del enlace */
+  display: inline-block; /* Hace que se comporte como botón */
+  border-radius: 6px; /* Opcional: mejora estética */
+  text-align: center;
+}
+
+.btn-excel2:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilo del botón "Inicio" */
+.btn-inicio {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-inicio:hover {
   background-color: #0056b3;
 }
 
